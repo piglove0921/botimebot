@@ -1,1 +1,1 @@
-worker: python bosstimebot.py
+worker: python bossTimeBot.py
