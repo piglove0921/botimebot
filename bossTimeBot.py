@@ -23,9 +23,7 @@ class Boss(object):
         self.NextTime = nextTime
         self.NoCut = noCut
 
-token_path = os.path.dirname(os.path.abspath(__file__)) + "/token.txt"
-t = open(token_path, "r", encoding="utf-8")
-token = t.read().split()[0]
+token = os.environ["BOT_TOKEN"]
 
 game = discord.Game("명령어를 모르실땐 /도움말을 입력하세요. 보탐 계산")
 client = discord.Client()
